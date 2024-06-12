@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/fragment_home"
+        android:title="홈"
+        android:icon="@drawable/ic_baseline_home_24"/>
+    <item
+        android:id="@+id/fragment_around"
+        android:title="둘러보기"
+        android:icon="@drawable/ic_baseline_vpn_lock_24"/>
+    <item
+        android:id="@+id/fragment_search"
+        android:title="검색"
+        android:icon="@drawable/ic_baseline_search_24"/>
+    <item
+        android:id="@+id/fragment_content"
+        android:title="보관함"
+        android:icon="@drawable/ic_baseline_person_outline_24"/>
+</menu>

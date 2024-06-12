@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageButton
+        android:id="@+id/backBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:src="@drawable/ic_baseline_arrow_back_ios_24" />
+
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="24dp"
+                android:layout_gravity="center"
+                android:text="안녕"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/singer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="안녕" />
+
+            <TextView
+                android:id="@+id/date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="2023.??.??" />
+
+            <ImageView
+                android:id="@+id/albumPhoto"
+                android:layout_width="wrap_content"
+                android:layout_height="180dp"
+                android:layout_margin="10dp"
+                android:src="@drawable/magnetic" />
+
+            <com.google.android.material.tabs.TabLayout
+                android:id="@+id/album_contents"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:tabIndicatorColor="#3f3fff"
+                app:tabIndicatorFullWidth="false"
+                app:tabRippleColor="#00ff0000"
+                app:tabSelectedTextColor="#3f3fff" />
+
+            <androidx.viewpager2.widget.ViewPager2
+                android:id="@+id/album_content_vp"
+                android:layout_width="390dp"
+                android:layout_height="330dp"
+                />
+
+        </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    <!--
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+
+        android:background="#959393" /> -->
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
